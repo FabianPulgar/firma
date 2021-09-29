@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>A REGISTRARSE SE HA DICHO</h1>
+	<form th:object="${usuario}" th:action="@{/registrarUsuario}"
+		method="POST">
+		<label class="form-label">Nombres</label>
+		<div>
+			<input type="text" class="form-control" name="nombre"
+				th:field="*{nombre}" placeholder="Ambos nombres">
+		</div>
+		<label class="form-label">Apellidos</label>
+		<div>
+			<input type="text" class="form-control" name="apellido"
+				th:field="*{apellido}" placeholder="Ambos apellidos">
+		</div>
+		<label class="form-label">Correo</label>
+		<div>
+			<input type="text" class="form-control" name="email"
+				th:field="*{email}" placeholder="example@email.com">
+		</div>
+		<label class="form-label">Username</label>
+		<div>
+			<input type="text" class="form-control" name="username"
+				th:field="*{username}" placeholder="Username que desea utilizar">
+		</div>
+		<label class="form-label">Contraseña</label>
+		<div>
+			<input type="password" class="form-control" name="contrasenia"
+				th:field="*{contrasenia}" placeholder="ingrese su contraseña">
+		</div>
+		<label class="form-label">Contraseña</label>
+		<div>
+			<input type="password" class="form-control" name="contrasenia2"
+				th:field="*{confirmContrasenia}" placeholder="reingrese su contraseña">
+		</div>
+		<div>
+			<p><input type="submit" value="Registrar"></p>
+		</div>
+	</form>
+</body>
+</html>
