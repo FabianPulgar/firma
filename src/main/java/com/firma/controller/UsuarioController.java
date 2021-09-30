@@ -13,8 +13,8 @@ import com.firma.modelo.Usuario;
 import com.firma.service.UsuarioService;
 
 @Controller
-@RequestMapping("/")
 public class UsuarioController {
+	
 	@Autowired
 	private UsuarioService usuarioService;
 	

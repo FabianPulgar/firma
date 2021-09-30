@@ -11,32 +11,32 @@
 		<label class="form-label">Nombres</label>
 		<div>
 			<input type="text" class="form-control" name="nombre"
-				th:field="*{nombre}" placeholder="Ambos nombres">
+				th:field="*{nombre}" placeholder="Ambos nombres" required>
 		</div>
 		<label class="form-label">Apellidos</label>
 		<div>
 			<input type="text" class="form-control" name="apellido"
-				th:field="*{apellido}" placeholder="Ambos apellidos">
+				th:field="*{apellido}" placeholder="Ambos apellidos" required>
 		</div>
 		<label class="form-label">Correo</label>
 		<div>
 			<input type="text" class="form-control" name="email"
-				th:field="*{email}" placeholder="example@email.com">
+				th:field="*{email}" placeholder="example@email.com" required>
 		</div>
 		<label class="form-label">Username</label>
 		<div>
 			<input type="text" class="form-control" name="username"
-				th:field="*{username}" placeholder="Username que desea utilizar">
+				th:field="*{username}" placeholder="Username que desea utilizar" required>
 		</div>
 		<label class="form-label">Contraseña</label>
 		<div>
 			<input type="password" class="form-control" name="contrasenia"
-				th:field="*{contrasenia}" placeholder="ingrese su contraseña">
+				th:field="*{contrasenia}" placeholder="ingrese su contraseña" required>
 		</div>
 		<label class="form-label">Contraseña</label>
 		<div>
 			<input type="password" class="form-control" name="contrasenia2"
-				th:field="*{confirmContrasenia}" placeholder="reingrese su contraseña">
+				th:field="*{confirmContrasenia}" placeholder="reingrese su contraseña" required>
 		</div>
 		<div>
 			<p><input type="submit" value="Registrar"></p>

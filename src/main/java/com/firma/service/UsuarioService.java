@@ -9,7 +9,7 @@ import com.firma.modelo.Usuario;
 @Service
 public interface UsuarioService {
 	List<Usuario> findAll();
-	Usuario save (Usuario usuarioModelo);
+	Usuario save (Usuario usuario);
 	void deleteById(Long id);
 	Usuario findById(Long id);
 }

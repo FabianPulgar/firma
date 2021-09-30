@@ -20,7 +20,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 	@Override
 	@Transactional(readOnly = true)
 	public Usuario findById(Long id) {
-		return this.usuarioDAO.findById(id).orElse(null);
+		return usuarioDAO.findById(id).orElse(null);
 	}
 
 	@Override
@@ -31,13 +31,13 @@ public class UsuarioServiceImpl implements UsuarioService {
 
 	@Override
 	@Transactional
-	public Usuario save(Usuario usuarioModelo) {
-		return this.usuarioDAO.save(usuarioModelo);
+	public Usuario save(Usuario usuario) {
+		return usuarioDAO.save(usuario);
 	}
 
 	@Override
 	@Transactional
 	public void deleteById(Long id) {
-		this.usuarioDAO.deleteById(id);
+		usuarioDAO.deleteById(id);
 	}
 }
